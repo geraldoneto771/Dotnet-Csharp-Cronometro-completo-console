@@ -1,0 +1,15 @@
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\bin\Debug\net6.0\Stopwatch.exe
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\bin\Debug\net6.0\Stopwatch.deps.json
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\bin\Debug\net6.0\Stopwatch.runtimeconfig.json
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\bin\Debug\net6.0\Stopwatch.dll
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\bin\Debug\net6.0\Stopwatch.pdb
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\Stopwatch.csproj.AssemblyReference.cache
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\Stopwatch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\Stopwatch.AssemblyInfoInputs.cache
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\Stopwatch.AssemblyInfo.cs
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\Stopwatch.csproj.CoreCompileInputs.cache
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\Stopwatch.dll
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\refint\Stopwatch.dll
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\Stopwatch.pdb
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\Stopwatch.genruntimeconfig.cache
+C:\Csharp\Projetos Balta-IO\CronometroSimples\Stopwatch\obj\Debug\net6.0\ref\Stopwatch.dll
