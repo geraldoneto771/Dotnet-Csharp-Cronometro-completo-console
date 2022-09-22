@@ -24,7 +24,8 @@ namespace Stopwatch // Note: actual namespace depends on the project name.
 
             //Entrada de dados e convertendo para string em minusculo
             string data = Console.ReadLine().ToLower();
-            //Console.WriteLine(data);
+            char type = char.Parse(data.Substring(data.Length - 1, 1));
+            Console.WriteLine(type);
 
         }
 
