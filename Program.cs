@@ -80,3 +80,9 @@ namespace Stopwatch // Note: actual namespace depends on the project name.
 
     }
 }
+
+//Desafios para este projeto
+/*
+    - Adicionar no menu a opção de cronometro crescente ou decrescente;
+    - Adicionar validações das entradas
+*/
