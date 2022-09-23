@@ -24,6 +24,9 @@ namespace Stopwatch // Note: actual namespace depends on the project name.
 
             //Entrada de dados e convertendo para string em minusculo
             string data = Console.ReadLine().ToLower();
+            Console.WriteLine("D = Contagem Decrescente");
+            Console.WriteLine("C = Contagem Crescente");
+            char typeCount = char.Parse(Console.ReadLine().ToLower());
             char type = char.Parse(data.Substring(data.Length - 1, 1));
             int time = int.Parse(data.Substring(0, data.Length - 1));
             int multiplier = 1;
@@ -31,21 +34,24 @@ namespace Stopwatch // Note: actual namespace depends on the project name.
             if (type == 'm')
             {
                 multiplier = 60;
+                time *= multiplier;
             }
             if (type == 's')
             {
                 multiplier = 1;
+                time *= multiplier;
             }
             if (time == 0)
             {
                 System.Environment.Exit(0);
             }
-            PreStart(time * multiplier);
+            PreStart(time, typeCount);
 
 
         }
 
-        static void PreStart(int time)
+
+        static void PreStart(int time, char typeCount)
         {
             Console.Clear();
             Console.WriteLine("Ready...");
@@ -54,23 +60,40 @@ namespace Stopwatch // Note: actual namespace depends on the project name.
             Thread.Sleep(1000);
             Console.WriteLine("Go...");
             Thread.Sleep(2000);
-            Start(time);
+            Start(time, typeCount);
         }
 
-        static void Start(int time)
+        static void Start(int time, char typeCount)
         {
             // tempo atual
-            int currentTime = 0;
-
-            while (currentTime != time)
+            int currentTime;
+            if (typeCount == 'c')
             {
-                Console.Clear();
-                currentTime++;
-                Console.WriteLine(currentTime);
-                //Thread - execução atual do programa //Sleep - dormir //Thread.Sleep() faça a execução do programa dormir por tantos milisegundos
-                Thread.Sleep(1000);
+                currentTime = 0;
+                while (currentTime != time)
+                {
+                    Console.Clear();
+                    currentTime++;
+                    Console.WriteLine(currentTime);
+                    //Thread - execução atual do programa //Sleep - dormir //Thread.Sleep() faça a execução do programa dormir por tantos milisegundos
+                    Thread.Sleep(1000);
 
+                }
             }
+            else if (typeCount == 'd')
+            {
+                currentTime = time + 1;
+                while (currentTime > 0)
+                {
+                    Console.Clear();
+                    currentTime--;
+                    Console.WriteLine(currentTime);
+                    //Thread - execução atual do programa //Sleep - dormir //Thread.Sleep() faça a execução do programa dormir por tantos milisegundos
+                    Thread.Sleep(1000);
+
+                }
+            }
+
 
             Console.Clear();
             Console.WriteLine("Stopwatch finalizado...");
@@ -83,6 +106,6 @@ namespace Stopwatch // Note: actual namespace depends on the project name.
 
 //Desafios para este projeto
 /*
-    - Adicionar no menu a opção de cronometro crescente ou decrescente;
+    - Adicionar no menu a opção de cronometro crescente ou decrescente; OK
     - Adicionar validações das entradas
 */
